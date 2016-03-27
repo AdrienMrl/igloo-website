@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <div id="header">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="iphone.css">
+    <link rel="stylesheet" type="text/css" href="buttons.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="typed.js"></script>
+    <script>
+    $(function(){
+      $(".typed").typed({
+        strings: ["reliable", "beautiful", "scalable", "maintainable", "accessible"],
+        typeSpeed: 100,
+        loop: true
+      });
+    });
+
+    </script>
+    <img id="logo-img" src="graphics/iglooV3.png"><span id="title">Igloo</span>
+  </div>
+</head>
+<body>
+  <br>
+
+  <center>
+    <div>
+      <span style="color: white"><b>We're a team of two iOS freelancers.</b></span><br>
+      We write <b><span class="typed"></span></b> apps.
+    </div>
+    <br>
+    <br>
+    <span>
+      <input type="submit" value="Pricing" style="width: 100px; background-color: #C04D6E" class="flat-button">
+      <input type="submit" value="Contact" style="width: 100px; background-color: #E72A60" class="flat-button">
+    </span>
+    <section>
+      <div class="iphone iphone-body">
+        <div class="camera-1"></div>
+        <div class="camera-2"></div>
+        <div class="iphone-screen">
+          <img style="width: 100%" src="screenshot.png"/>
+        </div>
+      </div>
+
+      <div class="description">
+        This is some blah blah blah text.
+      </div>
+    </section>
+
+    </center>
+  </div>
+</body>
+</html>

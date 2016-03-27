@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'SF';
+  font-size: 20pt;
+}
+
+html {
+  background-color: #0a5167;
+
+  margin: 0px;
+  border: 0px;
+}
+
+head {
+  margin: 0px;
+  border: 0px;
+}
+
+#header {
+  background-color: #0088b4;
+  width: 100%;
+  margin: 0px;
+  border: 0px;
+  font-family: 'circula';
+  font-size: 39pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px -5px 15px black;
+  background-image: url("imac-back.png");
+  background-position: 100% 50%;
+  background-size: 100% auto;
+}
+
+#logo-img {
+  width: 128px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+#title {
+  color: white;
+}
+
+.typed {
+  width: 40%;
+}
+
+.typed-cursor{
+    opacity: 1;
+    color: white;
+    font-size: 34pt;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@font-face {
+  font-family: 'circula';
+  src: url('graphics/circula/circula-medium.otf');
+}
+
+@font-face {
+  font-family: 'SF';
+  src: url('SFFont/System San Francisco Display Thin.ttf');
+}
+
+section {
+  margin: auto;
+  padding: 20px;
+}
+
+.iphone {
+    width: 15%;
+}
+
+.description {
+  float: right;
+  margin-left: 15%;
+  width: 200px;
+  height: 400px;
+}
