@@ -7,8 +7,7 @@ body {
 }
 
 html {
-  background-color: #0a5167;
-
+  background-color: #0A5167;
   margin: 0px;
   border: 0px;
 }
@@ -24,7 +23,7 @@ head {
   margin: 0px;
   border: 0px;
   font-family: 'circula';
-  font-size: 39pt;
+  font-size: 42pt;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,20 +79,4 @@ head {
 @font-face {
   font-family: 'SF';
   src: url('SFFont/System San Francisco Display Thin.ttf');
-}
-
-section {
-  margin: auto;
-  padding: 20px;
-}
-
-.iphone {
-    width: 15%;
-}
-
-.description {
-  float: right;
-  margin-left: 15%;
-  width: 200px;
-  height: 400px;
 }
