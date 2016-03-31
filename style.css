@@ -4,6 +4,8 @@ body {
   color: white;
   font-family: 'SF';
   font-size: 20pt;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 html {
@@ -22,12 +24,11 @@ html {
   background-image: url("imac-back.png");
   background-position: 100% 50%;
   background-size: 100% auto;
+  height: 300px;
 }
 
 #logo-img {
-  width: 128px;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  width: 200px;
 }
 
 .typed {
@@ -68,9 +69,25 @@ html {
   src: url('SFFont/System San Francisco Display Thin.ttf');
 }
 
+.parallax-picture {
+  height: 300px;
+  width: 100%;
+  background-image: url("graphics/background-xcode.jpg");
+  z-index: -1;
+  background-attachment: fixed;
+  background-size: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.overlay {
+  color: blue;
+  opacity: 0.6;
+}
+
 #team {
   display: flex;
-  height: 200px;
+  height: 300px;
   width: 70%;
   flex-direction: row;
 }
@@ -100,4 +117,15 @@ html {
 
 .description {
   font-size: 14pt;
+}
+
+#gradeup {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+}
+
+#gradeup .item {
+  margin: auto;
+  width: 250px;
 }
