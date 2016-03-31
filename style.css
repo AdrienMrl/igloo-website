@@ -8,20 +8,11 @@ body {
 
 html {
   background-color: #0A5167;
-  margin: 0px;
-  border: 0px;
-}
-
-head {
-  margin: 0px;
-  border: 0px;
 }
 
 #header {
   background-color: #0088b4;
   width: 100%;
-  margin: 0px;
-  border: 0px;
   font-family: 'circula';
   font-size: 42pt;
   display: flex;
@@ -37,10 +28,6 @@ head {
   width: 128px;
   padding-top: 28px;
   padding-bottom: 28px;
-}
-
-#title {
-  color: white;
 }
 
 .typed {
@@ -79,4 +66,38 @@ head {
 @font-face {
   font-family: 'SF';
   src: url('SFFont/System San Francisco Display Thin.ttf');
+}
+
+#team {
+  display: flex;
+  height: 200px;
+  width: 70%;
+  flex-direction: row;
+}
+
+.guy {
+  display: flex;
+  flex-direciton: row;
+  width: 400px;
+  margin: auto;
+}
+
+.guy-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.pic-portrait {
+  border-radius: 50%;
+  border: 5pt solid white;
+  box-shadow: 0pt 0pt 5pt black;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-right: 40px;
+}
+
+.description {
+  font-size: 14pt;
 }
