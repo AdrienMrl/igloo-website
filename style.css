@@ -24,7 +24,7 @@ html {
   background-image: url("imac-back.png");
   background-position: 100% 50%;
   background-size: 100% auto;
-  height: 300px;
+  height: 200px;
 }
 
 #logo-img {
@@ -70,7 +70,7 @@ html {
 }
 
 .parallax-picture {
-  height: 300px;
+  height: 200px;
   width: 100%;
   background-image: url("graphics/background-xcode.jpg");
   z-index: -1;
@@ -87,7 +87,7 @@ html {
 
 #team {
   display: flex;
-  height: 300px;
+  height: 200px;
   width: 70%;
   flex-direction: row;
 }
