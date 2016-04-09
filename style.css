@@ -6,6 +6,7 @@ body {
   font-size: 20pt;
   overflow: hidden;
   overflow-y: scroll;
+  letter-spacing: 1px;
 }
 
 html {
@@ -339,4 +340,22 @@ input:focus, textarea:focus {
 		padding-left: 3%;
 		padding-right: 3%;
 	}
+}
+
+.small_title {
+  font-size: 28pt;
+}
+
+#iphone-background {
+  position: absolute;
+  width: 300px;
+  z-index: -10;
+}
+
+#iphone-video {
+  width: 185px;
+  margin-left: 58px;
+  margin-top: -25px;
+  margin-right: 80px;
+  z-index: 10;
 }
