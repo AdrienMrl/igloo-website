@@ -20,7 +20,7 @@ html {
   background-image: url("imac-back.png");
   background-position: 100% 50%;
   background-size: 100% auto;
-  height: 200px;
+  height: 250px;
 }
 
 #header #title {
@@ -75,7 +75,10 @@ html {
   height: 200px;
 }
 
-#title-text {
+.section {
+  height: 250px;
+  display: flex;
+  margin: auto;
 }
 
 .typed {
@@ -117,19 +120,17 @@ html {
 }
 
 .parallax-picture {
-  height: 300px;
+  height: 250px;
   width: 100%;
   background-image: url("graphics/background-xcode.png");
   z-index: -1;
   background-attachment: fixed;
   background-size: 100%;
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 #team {
   display: flex;
-  min-height: 200px;
+  padding: 50px;
   max-width: 70%;
   margin: auto;
   flex-direction: row;
@@ -166,15 +167,16 @@ html {
 }
 
 #gradeup {
-
+  background-color: #4DA5C0;
   width: 100%;
 }
 
 #gradeup #container {
   display: flex;
-  width: 50%;
+  width: 850px;
   flex-direction: row;
   margin: auto;
+  height: 560px;
 }
 
 #gradeup .item {
@@ -296,7 +298,7 @@ input:focus, textarea:focus {
 	width: 100%;
 	border: #fbfbfb solid 4px;
 	cursor:pointer;
-	background-color: #3498db;
+	background-color: #E72A61;
 	color:white;
 	font-size:24px;
 	padding-top:22px;
@@ -351,12 +353,13 @@ input:focus, textarea:focus {
 #iphone-background {
   position: absolute;
   width: 300px;
-  z-index: -1;
+  margin-top: 15px;
 }
 
 #iphone-video {
+  position: absolute;
   width: 185px;
   margin-left: 58px;
-  margin-top: -25px;
+  margin-top: -10px;
   margin-right: 80px;
 }
