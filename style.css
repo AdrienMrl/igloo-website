@@ -43,9 +43,12 @@ html {
   opacity: 0.9;
 }
 
-#header #links a {
+a {
   text-decoration: none;
   color: white;
+}
+
+#header #links a {
   margin-right: 20px;
   padding-top: 20px;
 }
