@@ -49,6 +49,8 @@ a {
 }
 
 #header #links a {
+  text-decoration: none;
+  color: white;
   margin-right: 20px;
   padding-top: 20px;
 }
