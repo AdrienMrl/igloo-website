@@ -1,10 +1,21 @@
+<?php
+/**
+** Template Name: Home
+**
+** @package WordPress
+** @subpackage iglu-design
+** @since 
+**/
+?>
+
 <!DOCTYPE html>
 <html>
 
 <?php get_header(); ?>
 <body <?php body_class(); ?>>
   <div class="section">
-    <div style="margin: auto;"><b>We're a team of two iOS freelancers.</b><br>
+  <?php the_post(); ?>
+    <div style="margin: auto;">
       We write <b><span class="typed"></span></b> apps.
     </div>
   </div>
@@ -17,9 +28,7 @@
         <div class="small_title">Adrien Morel</div>
         <p class="description">
 
-          I live in Long Beach, California. I'm a passionate full stack
-          developer with some experience in Android and game development.
-          I was born in Paris, France and am going back there in a few months.
+<?php echo get_post_meta(get_the_id(), 'Adrien_bio', true); ?>
         </p>
       </div>
     </div>
@@ -29,9 +38,7 @@
       <div class="guy-text">
         <div class="small_title">Gwendal Lasson</div>
         <p class="description">
-iOS developer from Lyon, France. I love apple's environement, especially since the Swift release.
-I studied Computer Science at Epitech.
-Always trying hard to bring the best user interface.
+<?php echo get_post_meta(get_the_id(), 'Gwendal_bio', true); ?>
         </p>
       </div>
     </div>

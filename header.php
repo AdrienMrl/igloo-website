@@ -16,8 +16,9 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css">
 
     <script src="jquery.min.js"></script>
-    <script src="typed.js"></script>
-    <script src="analytics.js"></script>
+<?php echo get_template_directory(); ?>
+<script src="<?php get_template_directory(); ?>/typed.js"></script>
+<!-- <script src="<?php the_permalink(); ?>/analytics.js"></script> -->
     <script>
     $(function(){
       $(".typed").typed({

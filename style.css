@@ -176,7 +176,7 @@ a {
   border: 5pt solid white;
   box-shadow: 0pt 0pt 5pt black;
   width: 100px;
-  height: 100px;
+  height: auto;
   margin: auto;
   margin-right: 40px;
 }
