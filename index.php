@@ -1,58 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
 
-
-  <title>iOS freelance developers</title>
-
-
-
-  <meta charset="UTF-8">
-  <meta name="keywords" content="ios, developer, iphone, freelance, swift, remote work">
-  <meta name="description" content="We are a team of two iOS developers.">
-
-<div id="header">
-
-    <link rel="stylesheet" href="style.css" type="text/css">
-
-    <script src="jquery.min.js"></script>
-    <script src="typed.js"></script>
-    <script src="analytics.js"></script>
-    <script>
-    $(function(){
-      $(".typed").typed({
-        strings: ["reliable", "beautiful", "fun", "maintainable", "accessible"],
-        typeSpeed: 100,
-        loop: true
-      });
-    });
-
-
-    // smooth scroll on header buttons click
-    $(document).ready(function() {
-      $('#pricing-link, #contact-link').click(function(e){
-        e.preventDefault();
-        var target= $(this).get(0).id == 'pricing-link' ? $('#pricing') : $('#contact');
-        $('html, body').stop().animate({
-          scrollTop: target.offset().top
-        }, 500);
-      });
-
-    })
-
-    </script>
-    <div id="links">
-      <!--      <a id="pricing-link" href="#pricing">Pricing</a> -->
-      <a id="contact-link" href="#contact">Contact</a>
-      <!-- <a href="#">Blog</a> -->
-    </div>
-    <div id="title">
-      <img id="logo-img" src="graphics/iglooV3.png">
-      <div id="title-text">Igloo</div>
-    </div>
-  </div>
-</head>
-<body>
+<?php get_header(); ?>
+<body <?php body_class(); ?>>
   <div class="section">
     <div style="margin: auto;"><b>We're a team of two iOS freelancers.</b><br>
       We write <b><span class="typed"></span></b> apps.
@@ -66,6 +16,7 @@
       <div class="guy-text">
         <div class="small_title">Adrien Morel</div>
         <p class="description">
+
           I live in Long Beach, California. I'm a passionate full stack
           developer with some experience in Android and game development.
           I was born in Paris, France and am going back there in a few months.
@@ -140,5 +91,6 @@ Always trying hard to bring the best user interface.
         </form>
       </div>
     </div>
+  <?php wp_footer(); ?>
   </body>
   </html>
