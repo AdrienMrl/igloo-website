@@ -14,8 +14,10 @@
 <?php get_header(); ?>
 <body <?php body_class(); ?>>
   <div class="section">
-  <?php the_post(); ?>
     <div style="margin: auto;">
+    <b>
+  <?php the_post(); echo $post->post_content; ?>
+    </b><br>
       We write <b><span class="typed"></span></b> apps.
     </div>
   </div>
