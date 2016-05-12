@@ -23,7 +23,7 @@
 
   <div id="team">
     <div class="guy">
-      <img src="graphics/adrien.jpg" class="pic-portrait"/>
+    <img src="<?php echo bloginfo('template_directory'); ?>/graphics/adrien.jpg" class="pic-portrait"/>
       <div class="guy-text">
         <div class="small_title">Adrien Morel</div>
         <p class="description">
@@ -34,7 +34,7 @@
     </div>
 
     <div class="guy">
-      <img src="graphics/gwendal.jpg" class="pic-portrait"/>
+      <img src="<?php echo bloginfo('template_directory'); ?>/graphics/gwendal.jpg" class="pic-portrait"/>
       <div class="guy-text">
         <div class="small_title">Gwendal Lasson</div>
         <p class="description">
@@ -48,8 +48,8 @@
 <div id="gradeup">
   <div id="container">
   <div id="iphone">
-    <img id="iphone-background" src="graphics/iphone6.png"/>
-      <video autoplay loop width="312" height="566" id="iphone-video" name="Video Name" src="gradeupRecording.mov"></video>
+  <img id="iphone-background" src="<?php echo bloginfo('template_directory'); ?>/graphics/iphone6.png"/>
+  <video autoplay loop width="312" height="566" id="iphone-video" name="Video Name" src="<?php echo bloginfo('template_directory'); ?>/gradeupRecording.mov"></video>
     </div>
 
   <div style="display: flex; flex-direction: column; margin: auto; text-align: left;">
@@ -58,7 +58,7 @@
       Check out our latest app.<br>
       <br>
       <a href="https://itunes.apple.com/fr/app/gradesup/id1096969608?l=en&mt=8">
-        <img src="graphics/download-on-the-appstore.svg" height="56"/>
+      <img src="<?php echo bloginfo('template_directory'); ?>/graphics/download-on-the-appstore.svg" height="56"/>
       </a>
 
     </div>
