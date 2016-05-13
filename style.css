@@ -33,7 +33,7 @@ html {
   background-color: #0088b4;
   width: 100%;
   box-shadow: 0px -5px 15px black;
-  background-image: url("imac-back.png");
+  background-image: url("images/imac-back.png");
   background-position: 100% 50%;
   background-size: 100% auto;
   height: 250px;
@@ -383,4 +383,8 @@ input:focus, textarea:focus {
   margin-left: 58px;
   margin-top: -10px;
   margin-right: 80px;
+}
+
+.blogpost {
+  margin: 100px;
 }

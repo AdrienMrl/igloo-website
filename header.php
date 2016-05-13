@@ -43,9 +43,17 @@
     </script>
     <div id="links">
       <!--      <a id="pricing-link" href="#pricing">Pricing</a> -->
-      <a id="contact-link" href="#contact">Contact</a>
-      <a id="blog-link" href="<?php the_permalink(); ?>/blog.php">Blog</a>
-      <!-- <a href="#">Blog</a> -->
+
+<?php
+
+$args = array( 'post_type' => 'categories', 'posts_per_page' => 100);
+$loop = new WP_Query( $args );
+while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+      <a href="http://www.iglu.dev/<?php echo $post->post_content; ?>"><?php the_title(); ?></a>
+<?php
+endwhile;
+?>
     </div>
     <div id="title">
     <img id="logo-img" src="<?php bloginfo('template_directory'); ?>/images/iglooV3.png">

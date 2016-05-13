@@ -13,35 +13,50 @@
 
 <?php get_header(); ?>
 <body <?php body_class(); ?>>
-  BONJOUR LES AMIS
 
 <?php
-$count = 0;
 
-while( have_posts() ) : the_post(); ?>
-        <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>             
-          <h1 class="smplclssc_titleinmain"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-          <p class="smplclssc_data-descr"><?php _e( 'Posted on', 'simpleclassic' ); ?> <a href="<?php the_permalink(); ?>"><?php the_date(); ?></a>         
-            <?php _e( 'in', 'simpleclassic' ); ?> <?php the_category( ' ' ); ?>          
-          </p>                                                                
-          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>           
-content incoming >
-<?php the_content(); ?>
-< this was the content
-          <div class="smplclssc_post-border">
-            <?php wp_link_pages(
-              array(
-                'before' => '<div class="smplclssc_page-links"><span>'.__( 'Pages: ', 'simpleclassic' ).'</span>',
-                'after'  => '</div>'
-              )
-            ); /* Page pagination */
-            if( $count != 0 ) : ?>
-              <a class="smplclssc_links" href="#">[<?php _e( 'Top', 'simpleclassic' ); ?>]</a>
-            <?php endif; ?>
-          </div><!-- .smplclssc_post-border -->
-          <?php $count++; /* Post counter */ ?>
-        </div><!-- #post-## -->
-      <?php endwhile; ?>
+$args = array( 'post_type' => 'blog_post', 'posts_per_page' => 10 );
+$loop = new WP_Query( $args );
+while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+    <div class="blogpost">
+    <h2><?php the_title(); ?></h2>
+    <?php the_content();
+
+  echo "</div>";
+endwhile;
+/*
+    $custom_fields = get_post_custom(the_id()); $my_custom_field = $custom_fields['customfield']; foreach ( $my_custom_field as $key => $value ) { echo $key . " => " . $value . "<br />
+      <hr>
+      </div>";
+            }
+
+
+        endwhile;
+ */
+
+?>
+
+        <?php if ($paged > 1) { ?>
+
+              <nav id="nav-posts">
+                    <div class="prev"><?php next_posts_link('&laquo; Previous Posts'); ?></div>
+                          <div class="next"><?php previous_posts_link('Newer Posts &raquo;'); ?></div>
+                              </nav>
+
+    <?php } else { ?>
+
+        <nav id="nav-posts">
+              <div class="prev"><?php next_posts_link('&laquo; Previous Posts'); ?></div>
+                  </nav>
+
+    <?php } ?>
+
+        <?php wp_reset_postdata(); ?>
+
+
+
 
 <?php wp_footer(); ?>
 </body>

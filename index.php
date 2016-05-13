@@ -6,6 +6,7 @@
 ** @subpackage iglu-design
 ** @since 
 **/
+
 ?>
 
 <!DOCTYPE html>
@@ -57,7 +58,7 @@
   <div style="display: flex; flex-direction: column; margin: auto; text-align: left;">
     <h2>GradeUp</h2>
     <div class="description item">
-      Check out our latest app.<br>
+<?php _e("Check out our latest app.", "iglu-design"); ?><br>
       <br>
       <a href="https://itunes.apple.com/fr/app/gradesup/id1096969608?l=en&mt=8">
       <img src="<?php echo bloginfo('template_directory'); ?>/graphics/download-on-the-appstore.svg" height="56"/>
@@ -74,14 +75,15 @@
     </p> -->
   <h1 id="contact" class="scroll-smooth abitcentered">Contact</h2>
     <p class="abitcentered">
-      We usually don't take more than a few hours to answer. <b><a style="text-decoration: none; color: #BBBBBB;" href="mailto:adrien.morel@me.com?cc=gwendal.lasson@icloud.com">(or just email us)</a></b>
+<?php _e("We usually don't take more than a few hours to answer.", "iglu-design"); ?>
+<b><a style="text-decoration: none; color: #BBBBBB;" href="mailto:adrien.morel@me.com?cc=gwendal.lasson@icloud.com"><?php _e("(or just email us)", "iglu-design"); ?></a></b>
     </p>
     <div id="form-main">
       <div id="form-div">
         <form class="form" id="form1" method="POST" action="https://formspree.io/adrien.morel@me.com">
 
           <p class="name">
-            <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+          <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="<?php _e("Name", "iglu-design"); ?>" id="name" />
           </p>
 
           <p class="email">
@@ -89,7 +91,7 @@
           </p>
 
           <p class="text">
-            <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+          <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="<?php _e("Comment", "iglu-design"); ?>"></textarea>
           </p>
 
 
