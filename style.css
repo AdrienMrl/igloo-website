@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  color: white;
+  color: black;
   font-family: 'SF';
   font-size: 20pt;
   overflow: hidden;
@@ -10,14 +10,13 @@ body {
 }
 
 html {
-  background-color: #0A5167;
+  background-color: #917C74;
 }
 
 #header {
-  background-color: #0088b4;
+  background-color: #736766;
   width: 100%;
   box-shadow: 0px -5px 15px black;
-  background-image: url("imac-back.png");
   background-position: 100% 50%;
   background-size: 100% auto;
   height: 250px;
@@ -31,6 +30,7 @@ html {
   height: inherit;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 #header #links {
@@ -45,7 +45,7 @@ html {
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 #header #links a {
@@ -92,7 +92,7 @@ a {
 
 .typed-cursor{
     opacity: 1;
-    color: white;
+    color: black;
     font-size: 34pt;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
@@ -172,7 +172,7 @@ a {
 }
 
 #gradeup {
-  background-color: #4DA5C0;
+  background-color: #736766;
   width: 100%;
 }
 
@@ -303,7 +303,7 @@ input:focus, textarea:focus {
 	width: 100%;
 	border: #fbfbfb solid 4px;
 	cursor:pointer;
-	background-color: #E72A61;
+	background-color: #8C5B41;
 	color:white;
 	font-size:24px;
 	padding-top:22px;
@@ -372,5 +372,5 @@ input:focus, textarea:focus {
 .fontawesome a {
   padding: 5px;
   text-decoration: none;
-  color: white;
+  color: #F2EBC7;
 }
