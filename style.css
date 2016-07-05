@@ -160,9 +160,15 @@ a {
   border: 5pt solid white;
   box-shadow: 0pt 0pt 5pt black;
   width: 100px;
-  height: 100px;
+	height: 100%;
   margin: auto;
   margin-right: 40px;
+
+
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -khtml-border-radius: 50%;
 }
 
 .description {
@@ -219,8 +225,6 @@ hr {
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
-
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 #form-main{
 	width:100%;
