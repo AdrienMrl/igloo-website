@@ -171,12 +171,29 @@ a {
   margin-right: 30px;
 }
 
-#gradeup {
-  background-color: #4DA5C0;
+.app {
   width: 100%;
 }
 
-#gradeup #container {
+#gradeup {
+  background-color: #4DA5C0;
+}
+
+#movienight {
+  background-color: #4DA5C0;
+
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #3E96B1;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.app .container {
   display: flex;
   width: 850px;
   flex-direction: row;
