@@ -60,7 +60,7 @@
 </head>
 <body>
   <div class="section">
-    <div style="margin: auto;"><b>We're a team of two iOS developers.</b><br>
+    <div style="margin: auto;"><b>We are a team of two mobile apps developers.</b><br>
       We write <b><span class="typed"></span></b> apps.
     </div>
   </div>
@@ -72,7 +72,7 @@
       <div class="guy-text">
         <div class="small_title">Adrien Morel</div>
         <p class="description">
-        I'm a passionate full stack developer with experience in Android and game development. I started working with macs and iOS devices at a very young age and was always impressed by the tools behind these plateforms.<br>
+        I'm a passionate full stack developer. I started working with macs and iOS devices at a very young age and was always impressed by the tools behind these plateforms. I love pushing the limits of mobile devices.<br>
           <div class="fontawesome">
             <a href="https://github.com/Sevauk"><span class="fontawesome fa fa-github"></span></a>
             <a href="https://www.linkedin.com/in/adrien-morel-036b92118"><span class="fontawesome fa fa-linkedin"></span></a>
@@ -87,7 +87,7 @@
       <div class="guy-text">
         <div class="small_title">Gwendal Lasson</div>
         <p class="description">
-iOS developer from Lyon, France. I love apple's environement, especially since the Swift release.
+Also a developer from Lyon, France. I love mobile apps environements, especially since the Swift release.
 I studied Computer Science at Epitech.
 Always trying hard to bring the best user interface.
           <div class="fontawesome">
@@ -136,15 +136,102 @@ Always trying hard to bring the best user interface.
         </a>
       </div>
     </div>
+    <hr style="margin-bottom: 0;">
   </div>
+
+
+
+  <script>
+  $(function(){
+
+    var showing = false
+
+    $('#more-apps').hide()
+    $('#show-more-apps').click(function(e) {
+        $('#apps-text').html(showing ? "Show more" : "Show less")
+        if (showing)
+          $('#arrow').addClass('box_rotate_down box_transition')
+        else
+          $('#arrow').addClass('box_rotate_up box_transition')
+        $('#more-apps').stop().slideToggle(300)
+        e.preventDefault()
+        showing = !showing
+        return false
+    });
+});
+
+
+      </script>
+
+  <center>
+      <div>
+        <a href="#" id="show-more-apps" style="text-decoration: none; color: #0A5167; font-size: 30pt">
+          <span id="arrow" class="fa fa-chevron-down"></span>
+          <span id="apps-text" style="font-size: 30pt">Show more</span>
+        </a>
+      </div>
+  </center>
+  <br>
+  <br>
 </div>
 
 
+<div id="more-apps">
+  <div class="app" id="movienight">
+    <div class="container">
+        <img id="iphone-background" src="graphics/screen-societe.png"/>
+
+      <div style="display: flex; flex-direction: column; margin: auto; text-align: left;">
+          <h2>societe.com</h2>
+        <div class="playstore">
+          <a href='https://play.google.com/store/apps/details?id=com.societesas.societe.com&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' height="100" src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+        </div>
+      </div>
+    </div>
+    <hr style="margin-bottom: 0;">
+  </div>
+
+
+
+
+  <div class="app" id="movienight">
+    <div class="container">
+        <img class="landscape" src="graphics/screen-fourgames.png"/>
+
+      <div style="display: flex; flex-direction: column; margin: auto; text-align: left; margin-left: 330px;">
+          <h2>Four Games One Brain</h2>
+        <div class="playstore">
+          <a href='https://play.google.com/store/apps/details?id=com.adrien.fourgamesonebrain&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' height="100" src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+        </div>
+      </div>
+    </div>
+    <hr style="margin-bottom: 0;">
+  </div>
+
+
+
+
+
+
+  <div class="app" id="movienight">
+    <div class="container">
+        <img id="iphone-background" src="graphics/screen-escape.png"/>
+
+      <div style="display: flex; flex-direction: column; margin: auto; text-align: left;">
+          <h2>Escape Velocity</h2>
+        <div class="playstore">
+          <a href='https://play.google.com/store/apps/details?id=com.adrien.escape.velocity&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' height="100" src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- <h1 id="pricing" class="scroll-smooth abitcentered">Pricing</h2>
   <p class="abitcentered">
     Stuff about the pricing
     </p> -->
+<div id="contact-section">
   <h1 id="contact" class="scroll-smooth abitcentered">Contact</h2>
     <p class="abitcentered">
       We'll get back to you as fast as possible. <b><a style="text-decoration: none; color: #BBBBBB;" href="mailto:adrien.morel@me.com?cc=gwendal.lasson@icloud.com">(or just email us)</a></b>
@@ -173,5 +260,6 @@ Always trying hard to bring the best user interface.
         </form>
       </div>
     </div>
+  </div>
   </body>
   </html>
