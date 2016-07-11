@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 
   <title>iOS freelance developers</title>
-
-
 
   <meta charset="UTF-8">
   <meta name="keywords" content="ios, developer, iphone, freelance, swift, remote work">
@@ -32,7 +30,7 @@
 
     // smooth scroll on header buttons click
     $(document).ready(function() {
-      $('#pricing-link, #contact-link').click(function(e){
+      $('#pricing-link, #showcases-link, #contact-link').click(function(e){
         e.preventDefault();
         var target= $(this).get(0).id == 'pricing-link' ? $('#pricing') : $('#contact');
         $('html, body').stop().animate({
@@ -53,7 +51,7 @@
       <!-- <a href="#">Blog</a> -->
     </div>
     <div id="title">
-      <img id="logo-img" src="graphics/iglooV3.png">
+      <img alt="igloo logo" id="logo-img" src="graphics/iglooV3.png">
       <div id="title-text">Igloo</div>
     </div>
   </div>
@@ -68,7 +66,7 @@
 
   <div id="team">
     <div class="guy">
-      <img src="graphics/adrien.jpg" class="pic-portrait"/>
+      <img alt="picture of Adrien" src="graphics/adrien.jpg" class="pic-portrait"/>
       <div class="guy-text">
         <div class="small_title">Adrien Morel</div>
         <p class="description">
@@ -83,7 +81,7 @@
     </div>
 
     <div class="guy">
-      <img src="graphics/gwendal.jpg" class="pic-portrait"/>
+      <img alt="picture of gwendal" src="graphics/gwendal.jpg" class="pic-portrait"/>
       <div class="guy-text">
         <div class="small_title">Gwendal Lasson</div>
         <p class="description">
@@ -104,7 +102,7 @@ Always trying hard to bring the best user interface.
 <div class="app" id="gradeup">
   <div class="container">
     <div id="iphone">
-      <img id="iphone-background" src="graphics/iphone6.png"/>
+      <img alt="iphone background" id="iphone-background" src="graphics/iphone6.png"/>
       <video autoplay loop width="312" height="566" id="iphone-video" name="Video Name" src="gradeupRecording.mov"></video>
     </div>
 
@@ -112,7 +110,7 @@ Always trying hard to bring the best user interface.
       <h2>GradesUp</h2>
       <div class="description item">
         <a href="https://itunes.apple.com/fr/app/gradesup/id1096969608?l=en&mt=8">
-          <img src="graphics/download-on-the-appstore.svg" height="56"/>
+          <img alt="download on the appstore" src="graphics/download-on-the-appstore.svg" height="56"/>
         </a>
       </div>
     </div>
@@ -124,15 +122,15 @@ Always trying hard to bring the best user interface.
 <div class="app" id="movienight">
   <div class="container">
     <div id="iphone">
-      <img id="iphone-background" src="graphics/iphone6.png"/>
-      <img id="iphone-video" style="margin-top: 108px;" src="graphics/screenMovieNight.png"/>
+      <img alt="iphone background" id="iphone-background" src="graphics/iphone6.png"/>
+      <img alt="MovieNight screenshot" id="iphone-video" style="margin-top: 108px;" src="graphics/screenMovieNight.png"/>
     </div>
 
     <div style="display: flex; flex-direction: column; margin: auto; text-align: left;">
       <h2>MovieNight</h2>
       <div class="description item">
         <a href="#">
-          <img src="graphics/download-on-the-appstore.svg" height="56"/>
+          <img lat="download on the appstore" src="graphics/download-on-the-appstore.svg" height="56"/>
         </a>
       </div>
     </div>
@@ -179,7 +177,7 @@ Always trying hard to bring the best user interface.
 <div id="more-apps">
   <div class="app" id="movienight">
     <div class="container">
-        <img id="iphone-background" src="graphics/screen-societe.png"/>
+        <img alt="iPhone background" id="iphone-background" src="graphics/screen-societe.png"/>
 
       <div style="display: flex; flex-direction: column; margin: auto; text-align: left;">
           <h2>societe.com</h2>
@@ -196,7 +194,7 @@ Always trying hard to bring the best user interface.
 
   <div class="app" id="movienight">
     <div class="container">
-        <img class="landscape" src="graphics/screen-fourgames.png"/>
+        <img alt="game screenshot" class="landscape" src="graphics/screen-fourgames.png"/>
 
       <div style="display: flex; flex-direction: column; margin: auto; text-align: left; margin-left: 330px;">
           <h2>Four Games One Brain</h2>
@@ -215,7 +213,7 @@ Always trying hard to bring the best user interface.
 
   <div class="app" id="movienight">
     <div class="container">
-        <img id="iphone-background" src="graphics/screen-escape.png"/>
+        <img alt="iPhone background" id="iphone-background" src="graphics/screen-escape.png"/>
 
       <div style="display: flex; flex-direction: column; margin: auto; text-align: left;">
           <h2>Escape Velocity</h2>
