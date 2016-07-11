@@ -179,13 +179,10 @@ a {
 
 .app {
   width: 100%;
-}
-
-#gradeup {
   background-color: #4DA5C0;
 }
 
-#movienight {
+#gradeup {
   background-color: #4DA5C0;
 }
 
@@ -385,7 +382,7 @@ input:focus, textarea:focus {
   font-size: 28pt;
 }
 
-#iphone-background {
+.phone-background {
   position: absolute;
   width: 300px;
   margin-top: 14px;
@@ -398,7 +395,7 @@ input:focus, textarea:focus {
   margin-left: -90px;
 }
 
-#iphone-video {
+.phone-screen {
   position: absolute;
   width: 185px;
   margin-left: 58px;
@@ -447,4 +444,8 @@ input:focus, textarea:focus {
 
 .playstore {
   margin-left: -20px;
+}
+
+.centered {
+  text-align: center;
 }
